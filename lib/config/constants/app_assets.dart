@@ -27,7 +27,18 @@ class AssetImages {
   // }
 }
 
-class AssetIcons {
+class AppAssets {
+  //icons
   static String backButton = 'assets/icons/back.svg';
   static String fluentEye = 'assets/icons/fluent_eye.svg';
+  static String logout = 'assets/icons/logout.svg';
+  static String star = 'assets/icons/star.svg';
+  static String heartRed = 'assets/icons/heart_red.svg';
+  static String heartWhite = 'assets/icons/heart_white.svg';
+  static String home = 'assets/icons/home.svg';
+  static String cart = 'assets/icons/cart.svg';
+  static String backArrow = 'assets/icons/arrow_left.svg';
+  static String plusCircle = 'assets/icons/plus_circle.svg';
+  static String minusCircle = 'assets/icons/minus_circle.svg';
+  static String delete = 'assets/icons/delete.svg';
 }

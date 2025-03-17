@@ -18,7 +18,8 @@ dependencies:
   flutter_bloc: ^9.1.0
   flutter_svg: ^2.0.17
   get_it: ^8.0.3
-  google_fonts: ^6.2.1
+  hydrated_bloc: ^10.0.0
+  path_provider: ^2.1.5
 
   #local storage
   shared_preferences: ^2.2.2
@@ -36,3 +37,20 @@ flutter:
   assets:
       - assets/images/
       - assets/icons/
+  
+  fonts:
+    - family: Urbanist
+      fonts:
+        - asset: assets/fonts/Urbanist/Urbanist-Regular.ttf
+        - asset: assets/fonts/Urbanist/Urbanist-Bold.ttf
+        - asset: assets/fonts/Urbanist/Urbanist-Italic.ttf
+          style: italic
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora/Lora-Regular.ttf
+        - asset: assets/fonts/Lora/Lora-Bold.ttf
+        - asset: assets/fonts/Lora/Lora-Italic.ttf
+          style: italic
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter/Inter_18pt-Regular.ttf
