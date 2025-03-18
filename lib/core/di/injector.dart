@@ -1,3 +1,4 @@
+import 'package:coolstore/config/constants/app_constants.dart';
 import 'package:coolstore/data/repositories/auth_repository_impl.dart';
 import 'package:coolstore/domain/repositories/auth_repository.dart';
 import 'package:coolstore/domain/usecases/auth_user.dart';
@@ -53,7 +54,7 @@ class CustomDioInterceptor extends Interceptor {
   @override
   void onRequest(
       RequestOptions options, RequestInterceptorHandler handler) async {
-    print("Request sent: ${options.method} ${options.path}");
+    printDebug("Request sent: ${options.method} ${options.path}");
 
     return super.onRequest(options, handler);
   }
@@ -65,7 +66,7 @@ class CustomDioInterceptor extends Interceptor {
 
   @override
   void onError(DioException err, ErrorInterceptorHandler handler) async {
-    print("Response received: ${err.message} ${err.type} ");
+    printDebug("Response received: ${err.message} ${err.type} ");
     return super.onError(err, handler);
   }
 }
