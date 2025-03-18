@@ -7,28 +7,13 @@ import 'package:coolstore/presentation/cart/views/cart_screen.dart';
 import 'package:coolstore/presentation/home/cubit/home_cubit.dart';
 import 'package:coolstore/presentation/product/views/product_list_screen.dart';
 import 'package:coolstore/presentation/wishlist/views/wish_list_screen.dart';
-import 'package:coolstore/utils/dialogs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 
 @RoutePage()
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  @override
-  void initState() {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      Dialogs().showInfoDialog(context, "Welcome back, Johnd", "successs",
-          seconds: 15);
-    });
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

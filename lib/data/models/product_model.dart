@@ -1,20 +1,21 @@
+// ignore_for_file: annotate_overrides, overridden_fields
+
 import 'package:coolstore/data/models/rating_model.dart';
 import 'package:coolstore/domain/entities/product.dart';
 
 class ProductModel extends Product {
-  @override
   final int id;
-  @override
+
   final String title;
-  @override
+
   final double price;
-  @override
+
   final String description;
-  @override
+
   final String category;
-  @override
+
   final String image;
-  @override
+
   final RatingModel rating;
 
   ProductModel({

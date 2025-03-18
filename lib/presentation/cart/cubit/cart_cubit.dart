@@ -53,7 +53,7 @@ class CartCubit extends HydratedCubit<CartState> {
   }
 
   void clearCart() {
-    emit(const CartState());
+    emit(const CartState(cart: <CartItem>[]));
   }
 
   @override

@@ -8,10 +8,13 @@ import '../models/product_model.dart';
 
 class ProductRepositoryImpl implements ProductRepository {
   @override
-  Future<List<Product>> getProducts() async {
+  Future<List<Product>> getProducts({int limit = 10}) async {
     try {
-      final response =
-          await getIt<Dio>(instanceName: "FakeStoreApi").get("/products");
+      final response = await getIt<Dio>(instanceName: "FakeStoreApi")
+          .get("/products", queryParameters: {
+        "limit": limit,
+        //"offset": 1
+      });
 
       final List<dynamic> result = response.data;
 

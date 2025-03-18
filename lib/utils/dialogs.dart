@@ -12,7 +12,7 @@ class Dialogs {
         ? Colors.orange
         : dialogtype == "error"
             ? error
-            : Colors.green[900] ?? Colors.green;
+            : Color(0xFFFFE8B2);
     if (context.mounted) {
       // Check if the widget is still mounted before showing Flushbar
       WidgetsBinding.instance.addPostFrameCallback((_) async {
