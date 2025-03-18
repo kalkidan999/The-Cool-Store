@@ -3,7 +3,6 @@
 This is a eCommerce application built using **Flutter** following the **Clean Architecture** pattern with state management handled by **Bloc**, dependency injection using **GetIt**, and integrating the API from [FakeStoreAPI](https://fakestoreapi.com/).
 
 ## Features
-- Browse products by categories.
 - View product details.
 - Add products to cart.
 - Remove products from cart.
@@ -60,7 +59,7 @@ lib/
 ```
 
 ## API Integration
-The app fetches product data from [FakeStoreAPI](https://fakestoreapi.com/), which provides fake data for user authentication, products, categories, and product details.
+The app fetches product data from [FakeStoreAPI](https://fakestoreapi.com/), which provides fake data for user authentication, products, and product details.
 
 ### Example API Request
 ```dart
