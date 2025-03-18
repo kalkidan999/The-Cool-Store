@@ -72,6 +72,7 @@ final response = await dio.get('https://fakestoreapi.com/products');
 
 ## State Management
 `Bloc and Cubit` 
+
 Cubit: A simpler way to manage state with minimal boilerplate. Used where only state change is needed without handling events.
 
 Bloc: A more powerful state management solution that works with events and state, providing better scalability for complex scenarios.
