@@ -36,7 +36,7 @@ git clone https://github.com/kalkidan999/The-Cool-Store
 ```
 2. Navigate to the project directory:
 ```bash
-cd coolstore
+cd The-Cool-Store
 ```
 3. Install dependencies:
 ```bash
